@@ -14,6 +14,21 @@ public class User {
     private String lastName;
     private int age;
 
+    public User withFirstName (final String firstName) {
+        setFirstName (firstName);
+        return this;
+    }
+
+    public User withLastName (final String lastName) {
+        setLastName (lastName);
+        return this;
+    }
+
+    public User withAge (final int age) {
+        setAge (age);
+        return this;
+    }
+
     public Long getId() {
         return id;
     }
